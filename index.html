@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <head>
+
 	<script>
-		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-  if (!isChrome){
-      $('#iframeAudio').remove()
-  }
-  else {
-      $('#playAudio').remove() // just to make sure that it will not have 2x audio in the background 
-  }
-	</script>
+window.onload = function() {
+  var context = new AudioContext();
+}
+</script>
+
 </head>
 <html>
   <title>Mary Jarrett is Lookin' At Ya</title>
@@ -29,7 +27,6 @@ body, html {
 }
   </style>
   <body>  
-	<iframe src="Halloween Theme 1.mp3" type="audio/mp3" allow="autoplay" id="audio" style="display:none"></iframe>
 <audio autoplay loop>
     <source src="Halloween Theme 1.mp3" type="audio/mp3">
 </audio>
