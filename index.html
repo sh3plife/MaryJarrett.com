@@ -1,24 +1,23 @@
-
 <!DOCTYPE html>
 <html>
   <title>Mary Jarrett is Lookin' At Ya</title>
 <style>
 body, html {
   height: 100%;
-}
-
-.bg {
-  /* The image used */
   background-image: url("https://raw.githubusercontent.com/sh3plife/MaryJarrett.com/main/340598_2763132877882_1365416375_o.jpg");
-
-  /* Full height */
   height: 100%;
-
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  animation:spin 10s linear infinite;
+  }
+  
+  @keyframes spin{
+	from{transform:rotate(0deg)}
+	to{transform:rotate(360deg)}
 }
   </style>
-  <body>                                                                                 
+  <body>  
+ <iframe src="https://raw.githubusercontent.com/sh3plife/MaryJarrett.com/main/Halloween Theme 1.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+  </body>
 </html>
